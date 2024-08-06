@@ -1,0 +1,514 @@
+.survey {
+  background: #e2e1e7;
+}
+.textcomponent {
+  background: #e2e1e7;
+  padding: 30px 3%;
+}
+.textcomponent__title {
+  position: relative;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #082f49;
+  margin-bottom: 1.7rem;
+}
+.textcomponent__title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 70px;
+  height: 3px;
+  background: #f9a826;
+}
+.textcomponent__text {
+  color: #021420;
+  padding-bottom: 10px;
+}
+.textcomponent__list {
+  color: #021420;
+  padding-left: 20px;
+}
+.textcomponent__list--item {
+  padding-bottom: 8px;
+}
+.gallerycomponent__figure--image {
+  width: 100%;
+}
+.gallerycomponent{
+    padding-bottom: 30px;
+}
+.gallerycomponent__slide {
+  margin-top: 15px;
+  padding: 0 10px;
+  width: 100%;
+  overflow: auto;
+  display: flex;
+  justify-content: flex-start;
+  gap: 9px;
+}
+.gallerycomponent__slide--image {
+  width: 60px;
+  cursor: pointer;
+}
+@media only screen and (min-width: 768px) {
+  .survey {
+    display: flex;
+    justify-content: space-between;
+  }
+  .gallerycomponent {
+    padding-top: 70px;
+    float: right;
+    width: 40%;
+    margin-right: 20px;
+  }
+  .textcomponent {
+    width: 58%;
+  }
+}
+
+/* Drilling service */
+.drilling__container {
+  padding: 40px 3% 10px;
+}
+.boreholeDrillingComponent__title {
+  position: relative;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #082f49;
+  margin-bottom: 1.7rem;
+  padding-left: 20px;
+}
+.boreholeDrillingComponent__title::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 10px;
+  background: #f9a826;
+  left: 0;
+  top: 0;
+}
+.drilling__figure {
+  width: 100%;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+}
+.drilling__video {
+  width: 100%;
+  max-height: 500px;
+}
+.drilling__video--content {
+  width: 100%;
+  height: 500px;
+}
+.drilling__image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 0 10px;
+}
+.drilling__image--content {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.drilling__image--content:hover {
+  transform: scale(1.1);
+}
+
+.zoom-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.zoom-image {
+  max-width: 90%;
+  max-height: 90%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.drilling__cross {
+  margin: 30px auto 50px;
+  width: 60%;
+  padding: 1px;
+  background: #979189;
+}
+@media only screen and (min-width: 800px) {
+  .drilling__content {
+    display: flex;
+    align-items: center;
+  }
+  .drilling__container{
+    width: 60%;
+  }
+  .drilling__figure{
+    width: 35%;
+  }
+  .drilling__video {
+    height: 450px;
+  }
+  .drilling__video--content {
+    height: 100%;
+  }
+}
+/* Camera Styling */
+.camera{
+  background: #dddddf96;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.camera__container {
+  padding: 40px 3% 10px;
+}
+@media only screen and (min-width: 786px){
+  .camera{
+    padding-left: 20px;
+    flex-direction: unset;
+  }
+}
+
+/* Test Pumping Styling */
+.testpumping {
+  background: #f0f0f0; /* Light grey background */
+  padding: 30px 3%;
+  display: flex;
+  flex-direction: column;
+}
+
+.testpumping__content {
+  background: #ffffff;
+  padding: 20px 5px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.testpumping__header {
+  margin-bottom: 20px;
+}
+
+.testpumpingComponent__title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #082f49;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.testpumpingComponent__title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 70px;
+  height: 3px;
+  background: #f9a826;
+}
+
+.textcomponent__intro,
+.textcomponent__text {
+  color: #021420;
+  margin-bottom: 10px;
+}
+
+.testpumping__steps-title,
+.testpumping__benefits-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #082f49;
+  margin-bottom: 10px;
+}
+
+.testpumping__steps,
+.testpumping__benefits {
+  margin-bottom: 20px;
+}
+
+.textcomponent__list {
+  padding-left: 20px;
+  color: #021420;
+}
+
+.textcomponent__list--item {
+  margin-bottom: 8px;
+}
+
+.testpumping__visual {
+  margin-top: 20px;
+  /* Add styles for visual elements if needed */
+}
+
+.testpumping__cross {
+  margin: 30px auto;
+  width: 60%;
+  height: 1px;
+  background: #cccccc;
+}
+
+/* Larger screen adjustments */
+@media only screen and (min-width: 768px) {
+  .testpumping {
+    flex-direction: unset;
+    padding: 40px 5%;
+  }
+
+  .testpumping__content {
+    width: 60%;
+    margin-right: 5%;
+    box-shadow: none;
+    background: none;
+  }
+}
+
+/* Pump and Solar */
+.pumpsolar {
+  display: flex;
+  background: #e8f0f2;
+  flex-direction: column-reverse;
+  padding: 40px 3%;
+}
+
+.pump-solar__container {
+  margin-bottom: 30px;
+}
+
+.pumpSolarComponent__title {
+  position: relative;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #05445E;
+  margin-bottom: 1.7rem;
+  padding-left: 20px;
+}
+
+.pumpSolarComponent__title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 70px;
+  height: 3px;
+  background: #189AB4;
+}
+
+.textcomponent__intro {
+  color: #082f49;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.pump-solar__sections {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pump-solar__section {
+  background: #ffffff;
+  border: 1px solid #cdd0d4;
+  padding: 20px;
+  border-radius: 8px;
+}
+.pump-solar__section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #05445E;
+  margin-bottom: 10px;
+}
+
+.textcomponent__text {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.textcomponent__list {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.textcomponent__list--item {
+  color: #333;
+  margin-bottom: 8px;
+}
+.pump-solar__cross {
+  margin: 30px auto 50px;
+  width: 60%;
+  padding: 1px;
+  background: #979189;
+}
+.pump-solar__figure--image{
+  width: 100%;
+}
+
+
+/* Responsive Styling */
+@media only screen and (min-width: 800px) {
+  .pumpsolar {
+    display: flex;
+    justify-content: center;
+    flex-direction: unset;
+    gap: 40px;
+  }
+  .pump-solar__container {
+    width: 55%;
+  }
+  .pump-solar__sections {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .pump-solar__section {
+    flex: 1;
+  }
+  .pump-solar__figure{
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 45%;
+  }
+  .pump-solar__figure--image{
+    border-radius: 10px;
+  }
+}
+/* Tower Construction */
+/* Elevated Tank Tower Construction */
+.towerconstruction {
+  background: #f4f4f4;
+  padding: 40px 3%;
+}
+
+.towerconstruction__container {
+  margin-bottom: 30px;
+}
+
+.towerConstructionComponent__title {
+  position: relative;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #05445E;
+  margin-bottom: 1.7rem;
+  padding-left: 20px;
+}
+
+.towerConstructionComponent__title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 70px;
+  height: 3px;
+  background: #189AB4;
+}
+
+.textcomponent__intro {
+  color: #082f49;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.tower-construction__sections {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tower-construction__section {
+  background: #ffffff;
+  border: 1px solid #cdd0d4;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.tower-construction__section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #05445E;
+  margin-bottom: 10px;
+}
+
+.textcomponent__text {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.textcomponent__list {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.textcomponent__list--item {
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.tower-construction__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.tower-construction__image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tower-construction__image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tower-construction__cross {
+  margin: 30px auto 50px;
+  width: 60%;
+  padding: 1px;
+  background: #979189;
+}
+
+/* Responsive Styling */
+@media only screen and (min-width: 800px) {
+  .towerconstruction {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  .tower-construction__container {
+    width: 55%;
+  }
+  .tower-construction__sections {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .tower-construction__section {
+    flex: 1;
+  }
+
+  .tower-construction__gallery {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+  
+  .tower-construction__image {
+    max-width: 350px;
+    width: 100%;
+  }
+}
