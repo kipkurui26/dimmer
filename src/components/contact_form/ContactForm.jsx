@@ -116,6 +116,7 @@ const ContactForm = () => {
           formName={"message"}
           placeholder={"Enter your message"}
           onChange={handleFormChange}
+          value={formData.message}
         />
         <ButtonInput
           buttonName={isSending ? "Sending Message..." : "Send Message"}
