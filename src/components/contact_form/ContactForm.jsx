@@ -120,7 +120,6 @@ const ContactForm = () => {
         <ButtonInput
           buttonName={isSending ? "Sending Message..." : "Send Message"}
         />
-        <p className="error-message">This is where the error message will be seen</p>
         {errorMessage && <p className="error-message">{errorMessage}</p>}
       </form>
     </div>
