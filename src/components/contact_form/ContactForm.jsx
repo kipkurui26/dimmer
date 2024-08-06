@@ -24,7 +24,7 @@ const ContactForm = () => {
 
   const constructWhatsAppURL = (data) => {
     const baseURL = "https://wa.me/254768302374";
-    const message = `Name: ${data.fullname}%0AEmail: ${data.email}%0APhone: ${data.phone}%0AMessage: ${data.message}`;
+    const message = `Name: ${data.fullname}\nEmail: ${data.email}\nPhone: ${data.phone}\nMessage: ${data.message}`;
     return `${baseURL}?text=${encodeURIComponent(message)}`;
   };
 
@@ -34,13 +34,13 @@ const ContactForm = () => {
     setErrorMessage("");
     try {
       const whatsappURL = constructWhatsAppURL(formData);
-      clearForm()
+      clearForm();
       window.location.href = whatsappURL;
-    }
-    catch (error){
-      setErrorMessage("An error occurred while sending your message. Please try again later.")
-    }
-    finally{
+    } catch (error) {
+      setErrorMessage(
+        "An error occurred while sending your message. Please try again later."
+      );
+    } finally {
       setIsSending(false);
     }
   };
