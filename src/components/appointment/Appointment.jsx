@@ -30,9 +30,6 @@ const Appointment = () => {
           <Link to={"https://wa.me/254712055342"} className="appointment__button">
             Chat Now
           </Link>
-          <Link to={"#"} className="appointment__button">
-            Book an Appointment
-          </Link>
         </div>
       </div>
     </section>

@@ -4,18 +4,9 @@ import { FaAnglesRight } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
-const MiniBanner = ({ isAbout, hashLink, imageImg, imageAlt, breadcrumbTitle, miniBannerContent }) => {
+const MiniBanner = ({ isAbout, hashLink, breadcrumbTitle, miniBannerContent }) => {
   return (
     <section className="minibanner">
-      <figure className="minibanner__figure">
-        <img
-          src={imageImg}
-          alt={imageAlt}
-          className="minibanner__image"
-          loading="eager"
-        />
-      </figure>
-      <div className="minibanner__overlay"></div>
       <div className="minibanner__container">
         <div className="minibanner__breadcrumbs">
           <Link to="/" className="minibanner__breadcrumbs--link">

@@ -1,6 +1,5 @@
 import ContactForm from "../../components/contact_form/ContactForm";
 import MiniBanner from "../../components/minibanner/MiniBanner";
-import BannerImage from "../../assets/water-is-life.webp";
 import "./contact.css";
 import MetaTags from "../../components/metas/MetaTags";
 
@@ -25,8 +24,6 @@ const Contact = () => {
         isAbout={true}
         miniBannerContent="We'd love to hear from you! Reach out to us using the form below or via the contact details provided."
         breadcrumbTitle="Contact Us"
-        imageAlt="Contact Dimmer Enterprises LTD Banner"
-        imageImg={BannerImage}
       />
       <ContactForm />
     </section>

@@ -1,5 +1,4 @@
 import MiniBanner from "../../components/minibanner/MiniBanner";
-import BannerImage from "../../assets/water-is-life.webp";
 import "./about.css";
 import Mission from "./Mission";
 import Appointment from "../../components/appointment/Appointment";
@@ -32,8 +31,6 @@ const About = () => {
         isAbout={true}
         miniBannerContent="Our commitment to quality and sustainability has earned us a reputation for excellence in the industry."
         breadcrumbTitle="About Us"
-        imageAlt="About Dimmer Enterprises LTD Banner"
-        imageImg={BannerImage}
       />
       <Overview />
       <Mission />
