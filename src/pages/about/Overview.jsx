@@ -27,7 +27,7 @@ const Overview = () => {
             </p>
           ))}
           <div className="about__link--div">
-            <Link to="/our-projects" className="about__link">
+            <Link to="https://web.facebook.com/people/Dimmer-enterprises-limited/100063598085974/?sk=photos" target="_blank" className="about__link">
               View Our Projects <FaArrowRight />{" "}
             </Link>
           </div>
