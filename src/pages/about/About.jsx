@@ -22,7 +22,7 @@ const About = () => {
       {/* Meta Tags */}
       <MetaTags
         title={
-          "About Us - Dimmer Eneterprises Limited"
+          "About Us - Dimmer Enterprises Limited"
         }
         metaTags={metaTags}
         canonicalUrl={canonicalUrl}
