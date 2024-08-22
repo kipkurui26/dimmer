@@ -9,10 +9,10 @@ import { useEffect, useState } from "react";
 import { IoClose } from "react-icons/io5";
 
 const NavBar = () => {
+  const location = useLocation(); // Get the current location
   const [showMenu, setShowMenu] = useState(false);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
-  const location = useLocation(); // Get the current location
 
   const getScreenWidth = () => {
     setScreenWidth(window.innerWidth);
@@ -37,6 +37,7 @@ const NavBar = () => {
     }
     window.scrollTo(0, 0);
   }, [location, screenWidth]); // Dependency on location and screenWidth
+  
 
   return (
     <section className="navigation">
@@ -54,7 +55,7 @@ const NavBar = () => {
         {showMenu && (
           <ul className="nav__links">
             {navItems.map(({ id, title, path, cName }) => (
-              <li key={id} className={cName}>
+              <li key={id} className={cName} >
                 <Link className="nav__link--item" to={path}>
                   {title}
                 </Link>

@@ -1,28 +1,31 @@
-import TestImage from "../../assets/image1.jpg";
+import drillingUnit from '../../assets/drilling-unit.jpg'
+import cameraUnit from '../../assets/camera-image2.jpg'
+import testPumpingUnit from "../../assets/image1.jpg"
+import surveyUnit from '../../assets/surveykit.jpg'
 
 const Equipments = () => {
     const equipmentsList = [
         {
             id: 1,
-            image: TestImage,
+            image: drillingUnit,
             title: "Borehole Rig",
             description: "Our advanced borehole rigs are designed for precision and efficiency, capable of drilling through various soil types and rock formations. These rigs ensure accurate and reliable access to underground water resources, providing a sustainable solution for water extraction."
         },
         {
             id: 2,
-            image: TestImage,
+            image: testPumpingUnit,
             title: "Test Pumping Unit",
             description: "Our state-of-the-art test pumping units are essential for evaluating well performance. They measure yield, drawdown, and recovery rates to determine the optimum pumping capacity and efficiency. This ensures that your borehole delivers consistent and reliable water supply."
         },
         {
             id: 3,
-            image: TestImage,
+            image: surveyUnit,
             title: "Hydrogeological Survey Equipment",
             description: "We utilize cutting-edge hydrogeological survey equipment to map and analyze underground water reserves. This technology helps in identifying the most productive drilling sites, assessing aquifer properties, and providing data for sustainable water management."
         },
         {
             id: 4,
-            image: TestImage,
+            image: cameraUnit,
             title: "Camera Inspection Tool",
             description: "Our high-resolution camera inspection tools allow for thorough examination of boreholes. These tools are used to inspect the condition of the borehole casing, identify blockages, and detect any structural issues. Regular inspections ensure the longevity and reliability of your borehole."
         }

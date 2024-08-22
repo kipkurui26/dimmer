@@ -37,6 +37,25 @@
   gap: 10px;
   color: #091604;
 }
+.about__link--div{
+  padding: 20px 0;
+}
+.about__link{
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  /* border-radius: 3px; */
+  gap: 8px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  width: max-content;
+  color: #312e81;
+}
+.about__link:hover{
+  color: #f3f3f3;
+  background: #312e81;
+  gap: 10px;
+}
 @media only screen and (min-width: 800px) {
   .about__container {
     display: flex;

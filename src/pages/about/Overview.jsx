@@ -1,4 +1,6 @@
 import aboutBanner from "../../assets/bannerImage.jpeg";
+import { Link } from "react-router-dom";
+import { FaArrowRight } from "react-icons/fa";
 
 const Overview = () => {
   const paragraphText = [
@@ -24,6 +26,11 @@ const Overview = () => {
               {text}
             </p>
           ))}
+          <div className="about__link--div">
+            <Link to="/our-projects" className="about__link">
+              View Our Projects <FaArrowRight />{" "}
+            </Link>
+          </div>
         </div>
         <figure className="about__figure">
           <img

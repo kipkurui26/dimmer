@@ -1,0 +1,41 @@
+.projects{
+    width: 100%;
+    background: #d0d3d9;
+    padding: 50px 3%;
+}
+.projects__banner{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+.projects__title{
+    font-size: 1.6em;
+    font-weight: 600;
+    color: #1e1b4b;
+    padding-bottom: 15px;
+}
+.projects__description{
+    color: #1e1b4b;
+}
+.projects__link{
+    margin: 15px auto 0;
+    text-decoration: none;
+    color: #1e1b4b;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    max-width: max-content;
+    transition: all 0.4s ease-in-out;
+}
+.projects__link:hover{
+    color: #236803;
+    gap: 10px;
+    letter-spacing: 1px;
+}
+@media only screen and (min-width:800px){
+    .projects__banner{
+        margin: 0 auto;
+        width: 80%;
+    }
+}
