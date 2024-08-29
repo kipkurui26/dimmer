@@ -49,6 +49,8 @@ const NavBar = () => {
               className="nav__logo--image"
               src={DimmerLogo}
               alt="Dimmer Enterprise LTS Logo"
+              title="Dimmer Enterprises Logo"
+              loading="eager"
             />
           </Link>
         </figure>

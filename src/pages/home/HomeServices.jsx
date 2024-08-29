@@ -75,6 +75,8 @@ const HomeServices = () => {
                 src={preview}
                 alt={title}
                 className="homeservices__figure--image"
+                title={title}
+                loading='lazy'
               />
             </figure>
             <h3 className="homeservices__service--title">{title}</h3>

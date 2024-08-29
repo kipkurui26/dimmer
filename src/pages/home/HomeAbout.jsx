@@ -33,6 +33,8 @@ const HomeAbout = () => {
             className="homeabout__figure--image"
             src={aboutBanner}
             alt="About image Dimmer Enterpeises LTD"
+            title="About image Dimmer Enterpeises LTD"
+            loading="eager"
           />
         </figure>
       </div>
