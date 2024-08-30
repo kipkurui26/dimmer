@@ -4,7 +4,7 @@ import { FaAnglesRight } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
-const MiniBanner = ({ isAbout, hashLink, breadcrumbTitle, miniBannerContent }) => {
+const MiniBanner = ({ isAbout, hashLink, breadcrumbTitle, miniBannerContent, linkTitle }) => {
   return (
     <section className="minibanner">
       <div className="minibanner__container">
@@ -26,7 +26,7 @@ const MiniBanner = ({ isAbout, hashLink, breadcrumbTitle, miniBannerContent }) =
           ) : (
             <div className="minibar__content--learn">
               <HashLink to={hashLink} className="minibanner__content--link">
-                Learn More <FaArrowRight className="minibanner__content--icon"/>
+                {linkTitle} <FaArrowRight className="minibanner__content--icon"/>
               </HashLink>
             </div>
           )}

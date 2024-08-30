@@ -37,6 +37,8 @@ const Overview = () => {
             className="about__figure--image"
             src={aboutBanner}
             alt="About Dimmer Enterprises LTD"
+            title="About Dimmer Enterprises LTD"
+            loading="eager"
           />
         </figure>
       </div>

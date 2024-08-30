@@ -29,6 +29,8 @@ const GalleryComponent = ({imageList}) => {
           src={currentImage}
           alt={imageList[currentIndex].alt}
           className="gallerycomponent__figure--image"
+          title={imageList[currentIndex].alt}
+          loading="eager"
         />
       </div>
       <div className="gallerycomponent__slide">
@@ -39,6 +41,8 @@ const GalleryComponent = ({imageList}) => {
             alt={image.alt}
             className="gallerycomponent__slide--image"
             onClick={() => handleImageClick(index)}
+            title={image.alt}
+            loading="lazy"
           />
         ))}
       </div>

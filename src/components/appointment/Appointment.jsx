@@ -7,7 +7,7 @@ const Appointment = () => {
   return (
     <section className="appointment">
       <figure className="appointment__figure">
-        <img className="appointment__figure--image" src={WaterImage} alt="Background water" />
+        <img className="appointment__figure--image" src={WaterImage} alt="Background water" title="Let us chat on WhatsApp" loading="lazy"/>
       </figure>
       <div className="appointment__content">
         <h2 className="appointment__content--title">

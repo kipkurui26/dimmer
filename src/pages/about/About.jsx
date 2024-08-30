@@ -28,9 +28,11 @@ const About = () => {
         canonicalUrl={canonicalUrl}
       />
       <MiniBanner
-        isAbout={true}
+        isAbout={false}
         miniBannerContent="Our commitment to quality and sustainability has earned us a reputation for excellence in the industry."
         breadcrumbTitle="About Us"
+        linkTitle={'View us on FaceBook'}
+        hashLink={'https://web.facebook.com/people/Dimmer-enterprises-limited/100063598085974/?sk=photos'}
       />
       <Overview />
       <Mission />

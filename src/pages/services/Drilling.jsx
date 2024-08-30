@@ -1,9 +1,9 @@
 import { useState } from "react";
 import drillingVideo from "../../assets/drilling-video1.mp4";
-import drillingVideo1 from '../../assets/drillVideo.mp4'
-import drillingImage1 from '../../assets/drillingImage.png'
-import drillingImage2 from '../../assets/drilling-imagee2.jpeg'
-import drillingImage3 from '../../assets/drilling-image3.jpeg'
+import drillingVideo1 from "../../assets/drillVideo.mp4";
+import drillingImage1 from "../../assets/drillingImage.png";
+import drillingImage2 from "../../assets/drilling-imagee2.jpeg";
+import drillingImage3 from "../../assets/drilling-image3.jpeg";
 
 const Drilling = () => {
   const [zoomedImage, setZoomedImage] = useState(null);
@@ -79,19 +79,21 @@ const Drilling = () => {
               controls
               autoPlay
               loop
+              title="Borehole Drilling Video"
             >
               <source src={drillingVideo} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
           <div className="drilling__image">
-          <video
+            <video
               className="drilling__image--content"
               muted
               controls
               autoPlay
               loop
               onClick={() => handleImageClick(drillingVideo1)}
+              title="Borehole Drilling Video"
             >
               <source src={drillingVideo1} type="video/mp4" />
               Your browser does not support the video tag.
@@ -101,25 +103,31 @@ const Drilling = () => {
               alt="Drilling"
               className="drilling__image--content"
               onClick={() => handleImageClick(drillingImage1)}
+              title="Borehole Drilling Image 1"
+              loading="lazy"
             />
             <img
               src={drillingImage2}
               alt="Drilling"
               className="drilling__image--content"
               onClick={() => handleImageClick(drillingImage2)}
+              title="Borehole Drilling Image 2"
+              loading="lazy"
             />
             <img
               src={drillingImage3}
               alt="Drilling"
               className="drilling__image--content"
               onClick={() => handleImageClick(drillingImage3)}
+              title="Borehole Drilling Image 3"
+              loading="lazy"
             />
           </div>
         </div>
       </div>
       {zoomedImage && (
         <div className="zoom-overlay" onClick={closeZoom}>
-          <img src={zoomedImage} alt="Zoomed" className="zoom-image" />
+          <img src={zoomedImage} alt="Zoomed" className="zoom-image"  title="Zoomed Image" loading="lazy"/>
         </div>
       )}
       <div className="drilling__cross"></div>

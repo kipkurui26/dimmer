@@ -75,6 +75,7 @@ const TestPumping = () => {
               controls
               autoPlay
               loop
+              title="Test Pumping Video"
             >
               <source src={testPump1} type="video/mp4" />
               Your browser does not support the video tag.
@@ -86,25 +87,31 @@ const TestPumping = () => {
               alt="Drilling"
               className="drilling__image--content"
               onClick={() => handleImageClick(testPump2)}
+              title="Test Pumping Image 1"
+              loading="lazy"
             />
             <img
               src={testPump3}
               alt="Drilling"
               className="drilling__image--content"
               onClick={() => handleImageClick(testPump3)}
+              title="Test Pumping Image 2"
+              loading="lazy"
             />
             <img
               src={testPump4}
               alt="Drilling"
               className="drilling__image--content"
               onClick={() => handleImageClick(testPump4)}
+              title="Test Pumping Image 3"
+              loading="lazy"
             />
           </div>
         </div>
       </div>
       {zoomedImage && (
         <div className="zoom-overlay" onClick={closeZoom}>
-          <img src={zoomedImage} alt="Zoomed" className="zoom-image" />
+          <img src={zoomedImage} alt="Zoomed" className="zoom-image"  title="Zoomed Image" loading="lazy"/>
         </div>
       )}
     </section>

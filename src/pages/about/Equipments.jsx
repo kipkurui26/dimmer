@@ -41,7 +41,7 @@ const Equipments = () => {
                 {equipmentsList.map(({id, image, title, description}) => (
                     <div key={id} className="equipments__equipment">
                         <figure className="equipments__figure">
-                            <img src={image} alt={title} className="equipments__figure--image" />
+                            <img src={image} alt={title} className="equipments__figure--image" title={title} loading='lazy' />
                         </figure>
                         <div className="equipments__content">
                             <h2 className="equipments__content--title">{title}</h2>

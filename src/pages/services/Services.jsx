@@ -96,6 +96,7 @@ const Services = () => {
               miniBannerContent={service.miniBannerContent}
               breadcrumbTitle={service.breadcrumbTitle}
               hashLink={service.hashLink}
+              linkTitle={'Learn More'}
             />
           </div>
         ))}
